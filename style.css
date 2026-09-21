@@ -68,20 +68,22 @@ a:hover { text-decoration: underline; }
   border-bottom: 1px solid var(--rule);
   font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
 }
-.topnav-inner { display: flex; align-items: center; gap: 16px; height: 52px; }
+.topnav-inner { display: flex; align-items: center; gap: 10px; height: 48px; }
 .brand { font-weight: 600; color: var(--fg); white-space: nowrap; }
-.topnav .links { display: flex; gap: 4px; overflow-x: auto; flex: 1; scrollbar-width: none; }
+.topnav .links { display: flex; gap: 2px; overflow-x: auto; flex: 1; min-width: 0; scrollbar-width: none; }
 .topnav .links::-webkit-scrollbar { display: none; }
 .topnav .links a {
-  color: var(--muted); font-size: 0.9rem; padding: 6px 10px; border-radius: 999px; white-space: nowrap;
+  color: var(--muted); font-size: 0.84rem; padding: 5px 9px; border-radius: 999px; white-space: nowrap;
 }
 .topnav .links a:hover { color: var(--fg); background: var(--chip); text-decoration: none; }
 .topnav .links a.active { color: var(--accent); background: var(--accent-soft); }
 .theme-toggle {
   border: 1px solid var(--rule); background: var(--bg-elev); color: var(--fg);
-  width: 36px; height: 36px; border-radius: 50%; display: grid; place-items: center; cursor: pointer; flex-shrink: 0;
+  width: 28px; height: 28px; border-radius: 50%; display: grid; place-items: center; cursor: pointer; flex-shrink: 0; margin-left: auto;
 }
+.theme-toggle .icon { width: 14px; height: 14px; }
 .theme-toggle:hover { background: var(--chip); }
+@media (max-width: 900px) { .brand { display: none; } }
 .theme-toggle .moon { display: none; }
 :root[data-theme="dark"] .theme-toggle .sun { display: none; }
 :root[data-theme="dark"] .theme-toggle .moon { display: block; }
