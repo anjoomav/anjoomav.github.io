@@ -100,7 +100,8 @@ a:hover { text-decoration: underline; }
   border: 3px solid var(--bg-elev); box-shadow: var(--shadow);
 }
 h1 { margin: 0 0 6px; font-size: 2rem; font-weight: 600; letter-spacing: -0.01em; }
-.tagline { margin: 0 0 6px; font-size: 1.05rem; color: var(--muted); }
+.tagline { margin: 0 0 4px; font-size: 1.05rem; color: var(--fg); }
+.keywords { margin: 0 0 8px; font-size: 0.88rem; color: var(--muted); font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
 .meta { margin: 0; font-size: 0.92rem; color: var(--muted); }
 .badge {
   display: inline-block; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; font-size: 0.78rem; font-weight: 600;
