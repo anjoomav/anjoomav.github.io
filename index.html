@@ -235,6 +235,18 @@
     document.querySelectorAll('main section').forEach(function (s) { obs.observe(s); });
   }
 
+  // Photo: match the text block height (name top to profile-links bottom) on wide layouts
+  var photo = document.querySelector('.photo'), heroText = document.querySelector('.hero-text');
+  function sizePhoto() {
+    if (!photo || !heroText) return;
+    if (window.innerWidth <= 560) { photo.style.width = photo.style.height = ''; return; }
+    var h = Math.round(heroText.getBoundingClientRect().height);
+    photo.style.width = photo.style.height = h + 'px';
+  }
+  sizePhoto();
+  window.addEventListener('resize', sizePhoto);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(sizePhoto);
+
   // Back-to-top visibility
   var top = document.getElementById('toTop');
   window.addEventListener('scroll', function () {
