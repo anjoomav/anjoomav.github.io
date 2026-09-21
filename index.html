@@ -4,30 +4,52 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Anjoom Thahir Alikkam Veetil</title>
-  <meta name="description" content="Cognitive scientist studying individual variation in hemispheric lateralization, handedness and visuospatial attention.">
+  <meta name="description" content="Anjoom Thahir Alikkam Veetil — research on handedness, hemispheric lateralization and individual variation in visuospatial attention.">
   <link rel="stylesheet" href="style.css">
+  <script>
+    // Apply a saved theme before first paint to avoid a flash.
+    try { var t = localStorage.getItem('theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+  </script>
 </head>
 <body>
 
-<header class="site-header">
-  <div class="wrap">
-    <div class="header-row">
-      <img src="assets/photo.jpg" alt="Anjoom Thahir Alikkam Veetil" class="photo" width="128" height="128">
-      <div>
-        <h1>Anjoom Thahir Alikkam Veetil</h1>
-        <p class="tagline">Cognitive scientist · individual variation, handedness and hemispheric lateralization</p>
-        <p class="meta">Calicut, Kerala, India</p>
-      </div>
-    </div>
-    <nav>
+<nav class="topnav" aria-label="Sections">
+  <div class="wrap topnav-inner">
+    <a href="#top" class="brand">A. T. Alikkam Veetil</a>
+    <div class="links">
       <a href="#about">About</a>
       <a href="#research">Research</a>
       <a href="#publications">Publications</a>
       <a href="#talks">Talks</a>
       <a href="#education">Education</a>
       <a href="#awards">Awards</a>
+      <a href="#beyond">Beyond research</a>
       <a href="#contact">Contact</a>
-    </nav>
+    </div>
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
+      <svg class="icon sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+      <svg class="icon moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    </button>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap hero-inner">
+    <img src="assets/photo.jpg" alt="Anjoom Thahir Alikkam Veetil" class="photo" width="128" height="128">
+    <div class="hero-text">
+      <h1>Anjoom Thahir Alikkam Veetil</h1>
+      <p class="tagline">Handedness · hemispheric lateralization · individual variation in visuospatial attention</p>
+      <p class="meta">Calicut, Kerala, India &nbsp;·&nbsp; <span class="badge">Open to PhD positions</span></p>
+      <ul class="social" aria-label="Profiles">
+        <li><a href="mailto:anjoomav@gmail.com" title="Email"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><span>Email</span></a></li>
+        <li><a href="https://www.linkedin.com/in/anjoomav/" title="LinkedIn"><svg class="icon fill" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg><span>LinkedIn</span></a></li>
+        <li><a href="https://orcid.org/0000-0003-4573-8159" title="ORCID"><svg class="icon fill" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 4.378c.525 0 .947.431.947.947s-.422.947-.947.947a.95.95 0 0 1-.947-.947c0-.525.422-.947.947-.947zm-.722 3.038h1.444v10.041H6.647V7.416zm3.562 0h3.9c3.712 0 5.344 2.653 5.344 5.025 0 2.578-2.016 5.025-5.325 5.025h-3.919V7.416zm1.444 1.303v7.444h2.297c3.272 0 4.022-2.484 4.022-3.722 0-2.016-1.284-3.722-4.097-3.722h-2.222z"/></svg><span>ORCID</span></a></li>
+        <li><a href="https://scholar.google.com/citations?user=P6vjJoEAAAAJ&amp;hl=en" title="Google Scholar"><svg class="icon fill" viewBox="0 0 24 24" aria-hidden="true"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg><span>Scholar</span></a></li>
+        <li><a href="https://github.com/anjoomav" title="GitHub"><svg class="icon fill" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg><span>GitHub</span></a></li>
+        <!-- SOCIAL:BSKY -->
+        <!-- SOCIAL:X -->
+      </ul>
+    </div>
   </div>
 </header>
 
@@ -36,96 +58,150 @@
   <section id="about">
     <h2>About</h2>
     <p>I treat individual variation in cognition as an object of study rather than as measurement noise, using handedness as an exemplar quantifiable biological variable, with hemispheric lateralization and structural brain asymmetry as the measurement handle and visuospatial attention and working memory as the target functions. The translational endpoint is neurodevelopmental and neuropsychiatric heterogeneity, where atypical lateralization, left-handedness and attentional and working-memory deficits are disproportionately represented.</p>
-    <p>I hold a Master of Science (by Research) in Cognitive Science from IIT Kanpur, where I worked with Dr. Ark Verma, and an integrated BS-MS in Biology from IISER Mohali, where my master's thesis on comparative genomics was supervised by Dr. Kuljeet Singh Sandhu. In 2024 I was a Talent+ research intern in the Imaging Genomics group at the Max Planck Institute for Psycholinguistics, Nijmegen. Since February 2026 I have been working independently, in collaboration with Dr. Verma, on a three-paper programme and a confirmatory preregistration on handedness and the lateralization of visuospatial attention. I am currently seeking a PhD position.</p>
+    <p>I hold a Master of Science (by Research) in Cognitive Science from IIT Kanpur, where I worked with Dr. Ark Verma, and an integrated BS-MS in Biology from IISER Mohali, where my master's thesis on comparative genomics was supervised by Dr. Kuljeet Singh Sandhu. In 2024 I was a Talent+ research intern in the Imaging Genomics group at the Max Planck Institute for Psycholinguistics, Nijmegen. Since February 2026 I have been working independently, in collaboration with Dr. Verma, on handedness and the lateralization of visuospatial attention.</p>
+    <div class="chips" aria-label="Methods">
+      <span class="chip">Divided visual half-field</span>
+      <span class="chip">Hierarchical Bayesian DDM</span>
+      <span class="chip">brms / Stan</span>
+      <span class="chip">PsychoPy</span>
+      <span class="chip">Python &amp; R</span>
+      <span class="chip">FreeSurfer</span>
+      <span class="chip">PCA / CCA</span>
+      <span class="chip">Comparative genomics</span>
+    </div>
   </section>
 
   <section id="research">
     <h2>Research</h2>
+    <div class="cards">
 
-    <article class="item">
-      <h3>Handedness and the lateralization of visuospatial attention</h3>
-      <p class="meta">Independent researcher, with Dr. Ark Verma (IIT Kanpur) · Feb. 2026 – present</p>
-      <p>A four-experiment divided visual half-field study (orientation and spatial frequency, global–local form, faces, words) in 104 participants (102 analysed) recruited across IIT Kanpur and NIT Calicut, reported preliminarily at CogSci 2023 and now carried through to completion: two empirical papers, one theoretical framework paper and a confirmatory preregistration, all ready for submission. Hierarchical Bayesian drift-diffusion modelling of 23,273 trials (brms/Stan) localises the visual-field × handedness interaction to nondecision time, with robustness checked by permutation, specification-curve, equivalence and cross-site heterogeneity analyses.</p>
-    </article>
+      <article class="card">
+        <div class="card-head">
+          <h3>Handedness and the lateralization of visuospatial attention</h3>
+          <span class="pill pill-live">Current</span>
+        </div>
+        <p class="meta">Independent researcher, with Dr. Ark Verma (IIT Kanpur) · Feb. 2026 – present</p>
+        <p>A four-experiment divided visual half-field study (orientation and spatial frequency, global–local form, faces, words) in 104 participants (102 analysed) recruited across IIT Kanpur and NIT Calicut, reported preliminarily at CogSci 2023 and now carried through to completion. Hierarchical Bayesian drift-diffusion modelling of 23,273 trials (brms/Stan) localises the visual-field × handedness interaction to nondecision time, with robustness checked by permutation, specification-curve, equivalence and cross-site heterogeneity analyses.</p>
+        <div class="chips"><span class="chip">Bayesian DDM</span><span class="chip">Two-site sample</span><span class="chip">Visual attention</span></div>
+      </article>
 
-    <article class="item">
-      <h3>Disorder-associated brain structural asymmetry</h3>
-      <p class="meta">Talent+ Research Intern, Max Planck Institute for Psycholinguistics, Nijmegen · Sep. 2024 – Dec. 2024 · Supervisors: Dr. Clyde Francks and Dr. Meng-Yun Wang</p>
-      <p>Applied multivariate statistics, including principal component analysis and canonical correlation analysis, to disorder-associated measures of brain structural asymmetry, with cortical and subcortical measures extracted from structural MRI using FreeSurfer. Presented as a seminar talk at the Imaging Genomics Group Meeting.</p>
-    </article>
+      <article class="card">
+        <div class="card-head">
+          <h3>Disorder-associated brain structural asymmetry</h3>
+          <span class="pill">2024</span>
+        </div>
+        <p class="meta">Talent+ Research Intern, Max Planck Institute for Psycholinguistics, Nijmegen · Sep. – Dec. 2024 · Supervisors: Dr. Clyde Francks and Dr. Meng-Yun Wang</p>
+        <p>Applied multivariate statistics, including principal component analysis and canonical correlation analysis, to disorder-associated measures of brain structural asymmetry, with cortical and subcortical measures extracted from structural MRI using FreeSurfer. Presented as a seminar talk at the Imaging Genomics Group Meeting.</p>
+        <div class="chips"><span class="chip">Structural MRI</span><span class="chip">FreeSurfer</span><span class="chip">CCA</span></div>
+      </article>
 
-    <article class="item">
-      <h3>Handedness continuum and lateralized cognitive functions</h3>
-      <p class="meta">Master's thesis, IIT Kanpur · May 2019 – Aug. 2021 · Supervisor: Dr. Ark Verma</p>
-      <p>Three divided visual half-field experiments — tool recognition, action-word processing and symmetry recognition — in 39 participants sampled across the full handedness continuum, testing whether the degree of handedness predicts hemispheric lateralization. Handedness affected both the degree and the direction of lateralization in tool and symmetry processing, but only the degree in action-word processing, suggesting that handedness has differential effects on the lateralization of low- and high-level processes.</p>
-    </article>
+      <article class="card">
+        <div class="card-head">
+          <h3>Handedness continuum and lateralized cognitive functions</h3>
+          <span class="pill">2019 – 2021</span>
+        </div>
+        <p class="meta">Master's thesis, IIT Kanpur · Supervisor: Dr. Ark Verma</p>
+        <p>Three divided visual half-field experiments — tool recognition, action-word processing and symmetry recognition — in 39 participants sampled across the full handedness continuum, testing whether the degree of handedness predicts hemispheric lateralization. Handedness affected both the degree and the direction of lateralization in tool and symmetry processing, but only the degree in action-word processing, suggesting that handedness has differential effects on the lateralization of low- and high-level processes.</p>
+        <div class="chips"><span class="chip">Behavioural</span><span class="chip">Handedness continuum</span></div>
+      </article>
 
-    <article class="item">
-      <h3>Genomic rearrangement and cancer resistance in rodents</h3>
-      <p class="meta">BS-MS thesis, IISER Mohali · May 2017 – Jun. 2018 · Supervisor: Dr. Kuljeet Singh Sandhu</p>
-      <p>Comparative genomic analysis across mammals uncovered a large rearrangement in the naked mole-rat genome that splits a tumour-suppressor gene cluster relative to humans. The convergent rearrangement is confined to two rodent suborders that also show reduced oncogenesis, bearing on the exceptional cancer resistance of those species.</p>
-    </article>
+      <article class="card">
+        <div class="card-head">
+          <h3>Genomic rearrangement and cancer resistance in rodents</h3>
+          <span class="pill">2017 – 2018</span>
+        </div>
+        <p class="meta">BS-MS thesis, IISER Mohali · Supervisor: Dr. Kuljeet Singh Sandhu</p>
+        <p>Comparative genomic analysis across mammals uncovered a large rearrangement in the naked mole-rat genome that splits a tumour-suppressor gene cluster relative to humans. The convergent rearrangement is confined to two rodent suborders that also show reduced oncogenesis, bearing on the exceptional cancer resistance of those species.</p>
+        <div class="chips"><span class="chip">Comparative genomics</span><span class="chip">Bash &amp; R</span></div>
+      </article>
+
+    </div>
   </section>
 
   <section id="publications">
     <h2>Publications</h2>
-
-    <h3 class="sub">Peer-reviewed journal article</h3>
     <ol class="pubs">
-      <li>Jain, Y.*, Chandradoss, K. R.*, <strong>Alikkam Veetil, A.</strong>*, Bhattacharya, J., Lal, M., Bagadia, M., Singh, H., &amp; Sandhu, K. S. (2021). Convergent evolution of a genomic rearrangement may explain cancer resistance in hystrico- and sciuromorpha rodents. <em>npj Aging and Mechanisms of Disease, 7</em>, 1–15. <a href="https://doi.org/10.1038/s41514-021-00072-9">doi:10.1038/s41514-021-00072-9</a><br><span class="note">* Joint first authors.</span></li>
+      <li class="pub">
+        <span class="tag tag-journal">Journal</span>
+        <div>
+          Jain, Y.*, Chandradoss, K. R.*, <strong>Alikkam Veetil, A.</strong>*, Bhattacharya, J., Lal, M., Bagadia, M., Singh, H., &amp; Sandhu, K. S. (2021). Convergent evolution of a genomic rearrangement may explain cancer resistance in hystrico- and sciuromorpha rodents. <em>npj Aging and Mechanisms of Disease, 7</em>, 1–15.
+          <span class="note">* Joint first authors.</span>
+          <div class="pub-links"><a class="btn" href="https://doi.org/10.1038/s41514-021-00072-9">DOI</a></div>
+        </div>
+      </li>
+      <li class="pub">
+        <span class="tag tag-proc">Proceedings</span>
+        <div>
+          <strong>Alikkam Veetil, A.</strong>, Roy, N., &amp; Verma, A. (2023). Handedness modulates spatial attention – Insights from individual variations in lateralization of cognitive functions. <em>Proceedings of the Annual Meeting of the Cognitive Science Society, 45</em>, 2705–2712.
+          <span class="note">Open access, CC BY 4.0.</span>
+          <div class="pub-links"><a class="btn" href="https://escholarship.org/uc/item/0w62x0nt">Full text</a></div>
+        </div>
+      </li>
+      <li class="pub">
+        <span class="tag tag-prep">In prep</span>
+        <div><strong>Alikkam Veetil, A.</strong>, &amp; Verma, A. (2026). <em>Individual variation at the perception–action interface: Signed handedness predicts lateralised response initiation and inhibition in hierarchical visual attention.</em></div>
+      </li>
+      <li class="pub">
+        <span class="tag tag-prep">In prep</span>
+        <div><strong>Alikkam Veetil, A.</strong>, &amp; Verma, A. (2026). <em>Continuous handedness grades visual-field asymmetry across the visual hierarchy.</em></div>
+      </li>
+      <li class="pub">
+        <span class="tag tag-prep">In prep</span>
+        <div><strong>Alikkam Veetil, A.</strong>, &amp; Verma, A. (2026). <em>The Graded Attention–Action Lateralisation Axis: A two-level developmental framework for individual variation in the hemispheric organisation of perception and action.</em></div>
+      </li>
     </ol>
-
-    <h3 class="sub">Peer-reviewed conference proceedings</h3>
-    <ol class="pubs" start="2">
-      <li><strong>Alikkam Veetil, A.</strong>, Roy, N., &amp; Verma, A. (2023). Handedness modulates spatial attention – Insights from individual variations in lateralization of cognitive functions. <em>Proceedings of the Annual Meeting of the Cognitive Science Society, 45</em>, 2705–2712. <a href="https://escholarship.org/uc/item/0w62x0nt">escholarship.org/uc/item/0w62x0nt</a> <span class="note">(open access, CC BY 4.0)</span></li>
-    </ol>
-
-    <h3 class="sub">Manuscripts in preparation (2026)</h3>
-    <ol class="pubs" start="3">
-      <li><strong>Alikkam Veetil, A.</strong>, &amp; Verma, A. <em>Individual variation at the perception–action interface: Signed handedness predicts lateralised response initiation and inhibition in hierarchical visual attention.</em></li>
-      <li><strong>Alikkam Veetil, A.</strong>, &amp; Verma, A. <em>Continuous handedness grades visual-field asymmetry across the visual hierarchy.</em></li>
-      <li><strong>Alikkam Veetil, A.</strong>, &amp; Verma, A. <em>The Graded Attention–Action Lateralisation Axis: A two-level developmental framework for individual variation in the hemispheric organisation of perception and action.</em></li>
-    </ol>
-    <p class="note">A confirmatory preregistration for the programme has also been prepared.</p>
   </section>
 
   <section id="talks">
     <h2>Talks and posters</h2>
-    <ul class="list">
-      <li><strong>Talk.</strong> Spatial correlation between disorder-associated alterations of brain structural asymmetry and various neurobiological features. Imaging Genomics Group Meeting, Max Planck Institute for Psycholinguistics, Nijmegen, Nov. 2024.</li>
-      <li><strong>Talk.</strong> Handedness continuum captures individual variations in lateralization of cognitive functions. 23rd Conference of the European Society for Cognitive Psychology (ESCOP-2023), University of Porto, Sep. 2023.</li>
-      <li><strong>Poster.</strong> Handedness modulates spatial attention: Insights from individual variations in lateralization of cognitive functions. 45th Conference of the Cognitive Science Society (CogSci 2023), University of Sydney, Jul. 2023.</li>
-      <li><strong>Poster.</strong> Does the handedness continuum capture individual variations in the lateralization of cognitive functions? 9th Annual Conference of Cognitive Science (ACCS-2022), IIT Delhi, Dec. 2022.</li>
+    <ul class="timeline">
+      <li><span class="when">Nov 2024</span><div><span class="tag tag-talk">Talk</span> Spatial correlation between disorder-associated alterations of brain structural asymmetry and various neurobiological features. <span class="where">Imaging Genomics Group Meeting, Max Planck Institute for Psycholinguistics, Nijmegen.</span></div></li>
+      <li><span class="when">Sep 2023</span><div><span class="tag tag-talk">Talk</span> Handedness continuum captures individual variations in lateralization of cognitive functions. <span class="where">ESCOP-2023, University of Porto.</span></div></li>
+      <li><span class="when">Jul 2023</span><div><span class="tag tag-poster">Poster</span> Handedness modulates spatial attention: Insights from individual variations in lateralization of cognitive functions. <span class="where">CogSci 2023, University of Sydney.</span></div></li>
+      <li><span class="when">Dec 2022</span><div><span class="tag tag-poster">Poster</span> Does the handedness continuum capture individual variations in the lateralization of cognitive functions? <span class="where">ACCS-2022, IIT Delhi.</span></div></li>
     </ul>
   </section>
 
   <section id="education">
     <h2>Education</h2>
-    <ul class="list">
-      <li><strong>Master of Science (by Research) in Cognitive Science</strong>, Indian Institute of Technology Kanpur, 2018–2021.</li>
-      <li><strong>Integrated BS-MS in Biology</strong>, Indian Institute of Science Education and Research Mohali, 2013–2018.</li>
+    <ul class="timeline">
+      <li><span class="when">2018 – 2021</span><div><strong>Master of Science (by Research) in Cognitive Science</strong><br><span class="where">Indian Institute of Technology Kanpur</span></div></li>
+      <li><span class="when">2013 – 2018</span><div><strong>Integrated BS-MS in Biology</strong><br><span class="where">Indian Institute of Science Education and Research Mohali</span></div></li>
     </ul>
   </section>
 
   <section id="awards">
     <h2>Awards</h2>
-    <ul class="list">
-      <li>Talent+ Research Internship, Max Planck Institute for Psycholinguistics, 2024 (fully funded).</li>
-      <li>Diversity and Inclusion Conference Award, Cognitive Science Society (CogSci 2023).</li>
-      <li>Institute fellowship for postgraduate students, IIT Kanpur, 2018–2020.</li>
-      <li>INSPIRE fellowship, Department of Science and Technology, Government of India, 2013–2018.</li>
+    <ul class="timeline">
+      <li><span class="when">2024</span><div><strong>Talent+ Research Internship</strong>, Max Planck Institute for Psycholinguistics <span class="where">— fully funded placement</span></div></li>
+      <li><span class="when">2023</span><div><strong>Diversity and Inclusion Conference Award</strong>, Cognitive Science Society (CogSci 2023)</div></li>
+      <li><span class="when">2018 – 2020</span><div><strong>Institute fellowship for postgraduate students</strong>, IIT Kanpur</div></li>
+      <li><span class="when">2013 – 2018</span><div><strong>INSPIRE fellowship</strong>, Department of Science and Technology, Government of India</div></li>
+    </ul>
+  </section>
+
+  <section id="beyond">
+    <h2>Beyond research</h2>
+    <p>Between research positions I have spent time in community, sustainability and contemplative settings.</p>
+    <ul class="timeline">
+      <li><span class="when">Late 2025</span><div><strong>Vipassana and volunteering.</strong> Completed two Vipassana meditation courses and volunteered at the Dharamshala International Film Festival, Himachal Pradesh.</div></li>
+      <li><span class="when">Jan – Sep 2025</span><div><strong>Urvi Earth Centre, Munnar</strong> — joined as a volunteer, then Community and Sustainability Manager. Facilitated mindfulness programmes (Sadhana) on how physical environments and inner practice shape collective well-being, and built mud houses using local, earthen materials.</div></li>
+      <li><span class="when">Mar – Jun 2024</span><div><strong>Farmer's Share Permaculture and Craft Learning Center, Shornur</strong> — ran daily operations for an organic farming collective and led immersive educational camps on sustainable living and permaculture.</div></li>
     </ul>
   </section>
 
   <section id="contact">
     <h2>Contact</h2>
-    <ul class="list contact">
-      <li>Email: <a href="mailto:anjoomav@gmail.com">anjoomav@gmail.com</a></li>
-      <li>LinkedIn: <a href="https://www.linkedin.com/in/anjoomav/">linkedin.com/in/anjoomav</a></li>
-      <li>ORCID: <a href="https://orcid.org/0000-0003-4573-8159">0000-0003-4573-8159</a></li>
-      <li>Google Scholar: <a href="https://scholar.google.com/citations?user=P6vjJoEAAAAJ&amp;hl=en">profile</a></li>
-      <li>GitHub: <a href="https://github.com/anjoomav">github.com/anjoomav</a></li>
-    </ul>
+    <p>The best way to reach me is by email at <a href="mailto:anjoomav@gmail.com">anjoomav@gmail.com</a>. I'm happy to talk about PhD positions, collaborations, or anything about handedness and lateralization.</p>
+    <div class="contact-grid">
+      <a class="btn btn-primary" href="mailto:anjoomav@gmail.com">Email me</a>
+      <a class="btn" href="https://www.linkedin.com/in/anjoomav/">LinkedIn</a>
+      <a class="btn" href="https://orcid.org/0000-0003-4573-8159">ORCID</a>
+      <a class="btn" href="https://scholar.google.com/citations?user=P6vjJoEAAAAJ&amp;hl=en">Google Scholar</a>
+      <a class="btn" href="https://github.com/anjoomav">GitHub</a>
+      <!-- CONTACT:BSKY -->
+      <!-- CONTACT:X -->
+    </div>
   </section>
 
 </main>
@@ -133,6 +209,44 @@
 <footer class="wrap">
   <p>© 2026 Anjoom Thahir Alikkam Veetil · Last updated September 2026</p>
 </footer>
+
+<a href="#top" class="to-top" id="toTop" aria-label="Back to top">↑</a>
+
+<script>
+(function () {
+  // Theme toggle
+  var root = document.documentElement, btn = document.getElementById('themeToggle');
+  btn.addEventListener('click', function () {
+    var dark = root.getAttribute('data-theme') === 'dark' ||
+      (!root.getAttribute('data-theme') && window.matchMedia('(prefers-color-scheme: dark)').matches);
+    var next = dark ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    try { localStorage.setItem('theme', next); } catch (e) {}
+  });
+
+  // Highlight the section in view
+  var links = document.querySelectorAll('.topnav .links a');
+  var map = {};
+  links.forEach(function (a) { map[a.getAttribute('href').slice(1)] = a; });
+  if ('IntersectionObserver' in window) {
+    var obs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) {
+          links.forEach(function (a) { a.classList.remove('active'); });
+          if (map[e.target.id]) map[e.target.id].classList.add('active');
+        }
+      });
+    }, { rootMargin: '-40% 0px -55% 0px' });
+    document.querySelectorAll('main section').forEach(function (s) { obs.observe(s); });
+  }
+
+  // Back-to-top visibility
+  var top = document.getElementById('toTop');
+  window.addEventListener('scroll', function () {
+    top.classList.toggle('show', window.scrollY > 600);
+  }, { passive: true });
+})();
+</script>
 
 </body>
 </html>
