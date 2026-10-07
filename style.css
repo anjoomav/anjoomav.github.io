@@ -131,6 +131,8 @@ main section:last-child { border-bottom: 0; }
 h2 { margin: 0 0 20px; font-size: 1.45rem; font-weight: 600; display: flex; align-items: center; gap: 12px; }
 h2::after { content: ""; flex: 1; height: 1px; background: var(--rule); }
 h3 { margin: 0; font-size: 1.1rem; font-weight: 600; line-height: 1.35; }
+.intro { font-size: 1.05rem; }
+h3.sub { margin: 26px 0 8px; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); }
 
 /* Chips */
 .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 14px; }
