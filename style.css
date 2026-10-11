@@ -259,3 +259,7 @@ footer { padding: 28px 16px 64px; color: var(--muted); font-size: 0.88rem; }
 /* Ten nav links: give the bar more room than the content column, and only show the name where it fits */
 .topnav .wrap { max-width: 1120px; }
 @media (max-width: 1150px) { .brand { display: none; } }
+
+/* Research cards: plain-language lead first, technical detail underneath */
+.card .lead { margin-top: 10px; }
+.card .detail { margin-top: 8px; font-size: 0.9rem; color: var(--muted); }
