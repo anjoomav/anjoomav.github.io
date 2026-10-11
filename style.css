@@ -109,7 +109,8 @@ h1 { margin: 0 0 6px; font-size: 2rem; font-weight: 600; letter-spacing: -0.01em
   display: inline-block; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; font-size: 0.78rem; font-weight: 600;
   color: var(--accent); background: var(--accent-soft); padding: 2px 10px; border-radius: 999px; vertical-align: 1px;
 }
-.social { list-style: none; padding: 0; margin: 14px 0 0; display: flex; flex-wrap: nowrap; gap: 6px; }
+.social { list-style: none; padding: 0; margin: 14px 0 0; display: flex; flex-wrap: wrap; gap: 6px; }
+.hero-text { min-width: 0; }
 .social a {
   display: inline-flex; align-items: center; gap: 6px;
   font-family: system-ui, -apple-system, "Segoe UI", sans-serif; font-size: 0.78rem; color: var(--fg);
@@ -119,7 +120,7 @@ h1 { margin: 0 0 6px; font-size: 2rem; font-weight: 600; letter-spacing: -0.01em
 .social a .icon { width: 15px; height: 15px; }
 .social a:hover { text-decoration: none; background: var(--accent-soft); border-color: var(--accent); color: var(--accent); }
 /* Icon-only pills when the row would not fit */
-@media (max-width: 720px) {
+@media (max-width: 900px) {
   .social a span { display: none; }
   .social a { padding: 8px; }
   .social a .icon { width: 17px; height: 17px; }
@@ -220,3 +221,35 @@ footer { padding: 28px 16px 64px; color: var(--muted); font-size: 0.88rem; }
   .card { padding: 16px; }
   .card-head { flex-direction: column; gap: 6px; }
 }
+
+/* Research directions */
+.directions { list-style: none; counter-reset: dir; padding: 0; margin: 18px 0; display: grid; gap: 14px; }
+.directions li {
+  counter-increment: dir; position: relative; padding: 18px 20px 18px 64px;
+  background: var(--bg-elev); border: 1px solid var(--rule); border-radius: 12px; box-shadow: var(--shadow);
+}
+.directions li::before {
+  content: counter(dir); position: absolute; left: 20px; top: 18px; width: 30px; height: 30px; border-radius: 50%;
+  display: grid; place-items: center; background: var(--accent-soft); color: var(--accent);
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif; font-weight: 700; font-size: 0.9rem;
+}
+.directions p { margin: 6px 0 0; }
+
+/* Poster figure */
+.poster { display: flex; gap: 20px; align-items: flex-start; margin: 24px 0 0; }
+.poster img {
+  width: 180px; height: auto; border-radius: 8px; border: 1px solid var(--rule); box-shadow: var(--shadow);
+  transition: transform .15s;
+}
+.poster a:hover img { transform: translateY(-2px); }
+.poster figcaption { font-size: 0.95rem; color: var(--muted); }
+.poster figcaption strong { color: var(--fg); }
+@media (max-width: 560px) {
+  .directions li { padding: 16px 16px 16px 56px; }
+  .directions li::before { left: 14px; }
+  .poster { flex-direction: column; }
+  .poster img { width: 100%; max-width: 280px; }
+}
+/* Ten nav links: give the bar more room than the content column, and only show the name where it fits */
+.topnav .wrap { max-width: 1120px; }
+@media (max-width: 1150px) { .brand { display: none; } }
