@@ -273,7 +273,8 @@ body[data-page="beyond"] .links a[data-nav="beyond"] { color: var(--accent); bac
 .chips-lg { margin-top: 4px; }
 
 /* Beyond research: quote and embedded video */
-.pull-quote { margin: 22px 0; padding: 4px 0 4px 20px; border-left: 3px solid var(--accent); }
+.pull-quote { margin: 26px auto; padding: 0 24px; max-width: 640px; text-align: center; }
+.pull-quote::before { content: ""; display: block; width: 36px; height: 2px; margin: 0 auto 12px; background: var(--accent); }
 .pull-quote + .pull-quote { margin-top: 28px; }
 .pull-quote p { margin: 0; font-size: 1.12rem; font-style: italic; }
 .pull-quote .cite { margin-top: 8px; font-size: 0.9rem; font-style: normal; color: var(--muted); }
