@@ -28,7 +28,7 @@
   <meta name="twitter:description" content="{{ page.description }}">
   <meta name="twitter:image" content="https://anjoomav.github.io/assets/og-card.jpg">
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v={{ site.time | date: '%s' }}">
   <script>
     // Apply a saved theme before first paint to avoid a flash.
     try { var t = localStorage.getItem('theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}
@@ -61,6 +61,6 @@
 </footer>
 
 <a href="#top" class="to-top" id="toTop" aria-label="Back to top">&uarr;</a>
-<script src="assets/site.js"></script>
+<script src="assets/site.js?v={{ site.time | date: '%s' }}"></script>
 </body>
 </html>
