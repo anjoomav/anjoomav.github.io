@@ -83,7 +83,7 @@ a:hover { text-decoration: underline; }
 }
 .theme-toggle .icon { width: 12px; height: 12px; }
 .theme-toggle:hover { background: var(--chip); }
-@media (max-width: 900px) { .brand { display: none; } }
+@media (max-width: 680px) { .brand { display: none; } }
 .theme-toggle .moon { display: none; }
 :root[data-theme="dark"] .theme-toggle .sun { display: none; }
 :root[data-theme="dark"] .theme-toggle .moon { display: block; }
@@ -256,10 +256,18 @@ footer { padding: 28px 16px 64px; color: var(--muted); font-size: 0.88rem; }
   .poster { flex-direction: column; }
   .poster img { width: 100%; max-width: 280px; }
 }
-/* Ten nav links: give the bar more room than the content column, and only show the name where it fits */
-.topnav .wrap { max-width: 1120px; }
-@media (max-width: 1150px) { .brand { display: none; } }
 
 /* Research cards: plain-language lead first, technical detail underneath */
 .card .lead { margin-top: 10px; }
 .card .detail { margin-top: 8px; font-size: 0.9rem; color: var(--muted); }
+
+/* ---------- Multi-page ---------- */
+body[data-page="home"] .links a[data-nav="home"],
+body[data-page="research"] .links a[data-nav="research"],
+body[data-page="publications"] .links a[data-nav="publications"],
+body[data-page="cv"] .links a[data-nav="cv"],
+body[data-page="beyond"] .links a[data-nav="beyond"] { color: var(--accent); background: var(--accent-soft); }
+.page-head { padding-top: 44px; padding-bottom: 4px; }
+.page-head h1 { margin: 0; font-size: 2.1rem; }
+.page-intro { margin: 8px 0 0; color: var(--muted); font-size: 1.02rem; }
+.chips-lg { margin-top: 4px; }

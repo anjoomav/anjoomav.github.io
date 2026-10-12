@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.head_title }}</title>
+  <meta name="description" content="{{ page.description }}">
+  <link rel="canonical" href="{{ page.canonical }}">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <meta name="theme-color" content="#245c8a">
+
+  <!-- Link previews (LinkedIn, Bluesky, X, WhatsApp, Slack) -->
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="{{ page.canonical }}">
+  <meta property="og:title" content="{{ page.head_title }}">
+  <meta property="og:description" content="{{ page.description }}">
+  <meta property="og:image" content="https://anjoomav.github.io/assets/og-card.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Anjoom Thahir Alikkam Veetil: individual variation in attention and action">
+  <meta property="profile:first_name" content="Anjoom Thahir">
+  <meta property="profile:last_name" content="Alikkam Veetil">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@AnjoomAV">
+  <meta name="twitter:title" content="{{ page.head_title }}">
+  <meta name="twitter:description" content="{{ page.description }}">
+  <meta name="twitter:image" content="https://anjoomav.github.io/assets/og-card.jpg">
+
+  <link rel="stylesheet" href="style.css">
+  <script>
+    // Apply a saved theme before first paint to avoid a flash.
+    try { var t = localStorage.getItem('theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+  </script>
+</head>
+<body data-page="{{ page.nav }}">
+
+<nav class="topnav" id="top" aria-label="Pages">
+  <div class="wrap topnav-inner">
+    <a href="index.html" class="brand">A. T. Alikkam Veetil</a>
+    <div class="links">
+      <a href="index.html" data-nav="home">About</a>
+      <a href="research.html" data-nav="research">Research</a>
+      <a href="publications.html" data-nav="publications">Publications</a>
+      <a href="cv.html" data-nav="cv">CV</a>
+      <a href="beyond.html" data-nav="beyond">Beyond research</a>
+      <a href="index.html#contact" data-nav="contact">Contact</a>
+    </div>
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
+      <svg class="icon sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+      <svg class="icon moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    </button>
+  </div>
+</nav>
+
+{{ content }}
+
+<footer class="wrap">
+  <p>&copy; 2026 Anjoom Thahir Alikkam Veetil &middot; <a href="mailto:anjoomav@gmail.com">anjoomav@gmail.com</a></p>
+</footer>
+
+<a href="#top" class="to-top" id="toTop" aria-label="Back to top">&uarr;</a>
+<script src="assets/site.js"></script>
+</body>
+</html>
