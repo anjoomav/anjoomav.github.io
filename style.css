@@ -69,8 +69,8 @@ a:hover { text-decoration: underline; }
   font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
 }
 .topnav-inner { display: flex; align-items: center; gap: 8px; height: 44px; }
-.brand { font-weight: 600; color: var(--fg); white-space: nowrap; }
-.topnav .links { display: flex; gap: 2px; overflow-x: auto; flex: 1; min-width: 0; scrollbar-width: none; }
+.brand { font-weight: 600; color: var(--fg); white-space: nowrap; margin-right: 24px; }
+.topnav .links { display: flex; gap: 2px; overflow-x: auto; flex: 0 1 auto; min-width: 0; margin-left: auto; scrollbar-width: none; }
 .topnav .links::-webkit-scrollbar { display: none; }
 .topnav .links a {
   color: var(--muted); font-size: 0.8rem; padding: 4px 7px; border-radius: 999px; white-space: nowrap;
@@ -79,7 +79,7 @@ a:hover { text-decoration: underline; }
 .topnav .links a.active { color: var(--accent); background: var(--accent-soft); }
 .theme-toggle {
   border: 1px solid var(--rule); background: var(--bg-elev); color: var(--fg);
-  width: 24px; height: 24px; border-radius: 50%; display: grid; place-items: center; cursor: pointer; flex-shrink: 0; margin-left: auto; padding: 0;
+  width: 24px; height: 24px; border-radius: 50%; display: grid; place-items: center; cursor: pointer; flex-shrink: 0; margin-left: 4px; padding: 0;
 }
 .theme-toggle .icon { width: 12px; height: 12px; }
 .theme-toggle:hover { background: var(--chip); }
